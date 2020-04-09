@@ -113,7 +113,7 @@
     }
 
     // message.mutableContent
-    if (apsDict[@"mutable-content"] != nil && [apsDict[@"mutable-content"] isEqualToString:@"1"]) {
+    if (apsDict[@"mutable-content"] != nil && [apsDict[@"mutable-content"] isEqualToNumber:@1]) {
       message[@"mutableContent"] = @([RCTConvert BOOL:apsDict[@"mutable-content"]]);
     }
 
